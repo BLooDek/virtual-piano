@@ -1,0 +1,66 @@
+body {
+    background: #eee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-keys kbd,
+.black-keys kbd {
+    display: inline-flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.white-keys kbd {
+    background: #fff;
+    align-items: flex-end;
+    width: 50px;
+    height: 150px;
+    border: solid 1px #000;
+}
+
+.white-keys kbd:nth-child(n+2) {
+    margin-left: -5px;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+}
+
+.black-keys {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.black-keys kbd {
+    position: absolute;
+    background: #000;
+    width: 40px;
+    height: 90px;
+    color: #fff;
+    align-items: center;
+}
+
+.black-keys kbd:first-child {
+    right: -70px;
+}
+
+.black-keys kbd:nth-child(4) {
+    right: -278px;
+}
+
+.black-keys kbd:nth-child(3) {
+    right: -225px;
+}
+
+.black-keys kbd:nth-child(2) {
+    right: -120px;
+}
+
+.black-keys kbd:last-child {
+    right: -330px;
+}
